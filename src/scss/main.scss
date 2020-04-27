@@ -8,6 +8,8 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -18,4 +20,96 @@ body {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  max-width: 340px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.40);
+  border-radius: 5px;
+  padding: 2rem 1rem;
+
+  h2 {
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .form-control {
+    margin: 1rem 0;
+
+    label, input, small {
+      display: block;
+    }
+
+    label {
+      color: darken($color: $gray, $amount: 40);
+      font-size: 1rem;
+      margin-bottom: .2rem;
+      letter-spacing: 1px;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 2px;
+      border: 2px solid darken($color: $gray, $amount: 30);
+      font-size: 0.8rem;
+      padding: 0.5rem;
+      margin-bottom: .2rem;
+      color: darken($color: $gray, $amount: 40);
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    small {
+      font-size: 0.8rem;
+      color: darken($color: $gray, $amount: 40);
+      visibility: hidden;
+    }
+  }
+
+  .form-control.error {
+    input {
+      border-color: $red;
+    }
+
+    small {
+      color: $red;
+      visibility: visible;
+    }
+  }
+
+  .form-control.success {
+    input {
+      border-color: $green;
+    }
+
+    small {
+      visibility: hidden;
+    }
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $blue;
+    color: $white;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color: $blue, $amount: 10);
+    }
+  }
 }
