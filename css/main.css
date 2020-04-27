@@ -392,4 +392,43 @@ body {
     #board button:hover {
       background-color: #08a7e6; }
 
+#finish {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); }
+  #finish div {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #finish div h2 {
+      color: #fff; }
+    #finish div .btn {
+      margin-top: 1rem;
+      display: block;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      background-color: #29bdf8;
+      color: #fff;
+      cursor: pointer; }
+      #finish div .btn:hover {
+        background-color: #0683b5; }
+
 /*# sourceMappingURL=main.css.map */
