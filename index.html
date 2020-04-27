@@ -33,7 +33,38 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Form Validator</h1>
+    
+    <div id="board">
+      <h2>Register With Us</h2>
+
+      <form>
+        <div class="form-control">
+          <label>Username</label>
+          <input type="text" placeholder="Enter username...">
+          <small>error</small>
+        </div>
+        
+        <div class="form-control success">
+          <label>Email</label>
+          <input type="email" placeholder="Enter email...">
+          <small>error</small>
+        </div>
+        
+        <div class="form-control error">
+          <label>Password</label>
+          <input type="password" placeholder="Enter password...">
+          <small>error</small>
+        </div>
+        
+        <div class="form-control">
+          <label>Re-password</label>
+          <input type="password" placeholder="Enter Re-password">
+          <small>error</small>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
 
     <script src="js/main.js"></script>
   </body>
