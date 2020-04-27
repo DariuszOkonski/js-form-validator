@@ -113,3 +113,43 @@ body {
     }
   }
 }
+
+#finish {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0, 0.8);
+
+  
+  div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: $white;  
+    }
+
+    .btn {
+      margin-top: 1rem;
+      display: block;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      background-color: $blue;
+      color: $white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($color: $blue, $amount: 20);
+      }
+    }
+  }
+}
