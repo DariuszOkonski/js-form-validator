@@ -2,6 +2,8 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const rePassword = document.getElementById('re-password');
+const finish = document.getElementById('finish');
+const btnClose = document.querySelector('.btn');
 
 const sizes = {
     minUserName: 3,
@@ -89,16 +91,32 @@ function checkRePassword(password, rePassword) {
     }
 }
 
+function clearAllClasses() {
+    clearAdditionalClasses(username);
+    clearAdditionalClasses(email);
+    clearAdditionalClasses(password);
+    clearAdditionalClasses(rePassword);
+
+}
+
+function clearAllInputs() {
+    username.value = '';
+    email.value = '';
+    password.value = '';
+    rePassword.value = '';
+}
+
 function areAllValid() {
     if(pass.username && pass.email && pass.password && pass.rePassword) {
-        clearAdditionalClasses(username);
-        clearAdditionalClasses(email);
-        clearAdditionalClasses(password);
-        clearAdditionalClasses(rePassword);
-       
-        console.log('all passed');
+       finish.style.visibility = 'visible';  
     }
 }
+
+btnClose.addEventListener('click', () => {
+    clearAllClasses();
+    clearAllInputs();
+    finish.style.visibility = 'hidden';
+});
 
 document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
