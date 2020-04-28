@@ -1,4 +1,4 @@
-![Form Validator (src/assets/img/github.png)
+![Form Validator (src/assets/img/github.png)]
 # Form Validator
 
 Form Validator is a javascript app. It is validate data as username, email, password and re-password on a client side. If all data are correct it display appropriate message. It is build for both mobile and desktop views.
