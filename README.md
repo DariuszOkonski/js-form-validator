@@ -15,6 +15,9 @@ Form Validator is a javascript app. It is validate data as username, email, pass
 # gulp-starter
 
 `npm install -g gulp-cli`
+
 `npm install`
+
 `gulp`
+
 To publish your page using github pages use `npm run deploy`
